@@ -1,0 +1,5 @@
+#ignore ssd folder
+ssd_keras-master/
+
+#ignore dataset
+malaria-bounding-box/
