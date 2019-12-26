@@ -1,0 +1,28 @@
+{
+    "model" : {
+        "backend":      "ssd7",
+        "input":        200,
+        "labels":               ["schizont", "ring", "trophozoite", "difficult", "red blood cell", "gametocyte", "leukocyte"]
+    },
+
+    "train": {
+        "train_image_folder":   "malaria-bounding-boxes/malaria/images",
+        "train_annot_folder":   "malaria-bounding-boxes/malaria/anns",
+        "train_image_set_filename": "malaria-bounding-boxes/malaria/training_small.txt",
+
+        "train_times":          1,
+        "batch_size":           8,
+        "learning_rate":        1e-4,
+        "nb_epochs":            10,
+        "warmup_epochs":        3,
+	       "saved_weights_name":     "experimento_1_ssd7.h5",
+        "debug":                true
+    },
+
+
+"test": {
+        "test_image_folder":   "malaria-bounding-boxes/malaria/images",
+        "test_annot_folder":   "malaria-bounding-boxes/malaria/anns",
+        "test_image_set_filename":   "malaria-bounding-boxes/malaria/test.txt"
+    }
+}

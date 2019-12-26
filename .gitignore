@@ -3,3 +3,9 @@ ssd_keras-master/
 
 #ignore dataset
 malaria-bounding-boxes/
+
+#ignore weights VGG16
+VGG_ILSVRC_16_layers_fc_reduced.h5
+
+#ignore floder result
+result_ssd7_1/
